@@ -7,6 +7,33 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Hi people</h1>
+    <h1>Hi  <%=person.fullName%> </h1>
+    <p> About Me : <%=person.aboutMe%> </p>
+    <div>
+      <p>Known Technologies</p>
+       <ul> 
+          <% person.knownTechnologies.forEach(function(technology){ %>
+            <li><%=technology%></li>
+          <% }) %>
+       </ul>
+    </div>
+    <a href="<%=person.githubUrl%>">Github</a>
+    <a href="<%=person.twitterUrl%>">Twitter</a>
+    <div>
+      <p>Favorite Books</p>
+       <ul> 
+          <% person.favoriteBooks.forEach(function(book){ %>
+            <li><%=book%></li>
+          <% }) %>
+       </ul>
+    </div>
+    <div>
+      <p>Favorite Artists</p>
+       <ul> 
+          <% person.favoriteArtists.forEach(function(artist){ %>
+            <li><%=artist%></li>
+          <% }) %>
+       </ul>
+    </div>
   </body>
 </html>

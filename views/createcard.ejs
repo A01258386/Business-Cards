@@ -1,19 +1,33 @@
-<div class="row  mt-4">
-  <% for (var i =0; i < users.length;  i++ ) { %>
-      <div class="col-12 col-md-8">
-          <div class="card text-white bg-dark mb-3">
-              <div class="card-header"> BLOG</div>
-              <div class="card-body">
-                  
-                  <h5 class="card-title"> <%=users[i].id %> </h5>
-                  <p class="card-text"> <%=users[i].fullname %> </p>
-              </div>
-          </div>
-      </div>
-   <% } %>
- 
-  
-  <div class="col-12 col-md-4">
-      <h1>Selam</h1>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="createCardStyles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <form action="/" method="post">
+            <input type="text" value="Gokce Gokmen" name="fullName" placeholder="Full Name">
+            <textarea name="aboutMe" placeholder="aboutMe" id="" placeholder="About Me" cols="30" rows="10">lorem ipsum dolor dit ame</textarea>
+            <label for="">Technologies You Know</label>
+            <input type="checkbox" name="html" checked  id=""> HTML
+            <input type="checkbox" name="css" checked id=""> CSS
+            <input type="checkbox" name="js" id=""> JS
+            <input type="checkbox" name="git"  id=""> Git
+            <input type="checkbox" checked name="react" id=""> React
+            <input type="checkbox" name="node.js" id=""> Node.js
+            <input type="text" value="https://github.com/A01258386" name="githubUrl" placeholder="Github URL" id="">
+            <input type="text"  value="https://twitter.com/"  name="twitterUrl" placeholder="Twitter URL" id="">
+            <input type="text"  value="Stealing Fire"  name="books" placeholder="Books (seperate by commas)" id="">
+            <input type="text"  value="Mariah Carey"  name="artists" placeholder="Artists (seperate by commas)" id="">
+            <input type="submit" value="Create Site">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+body .container{
+    background-color: #8780d1;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;}
